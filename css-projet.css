@@ -1,0 +1,136 @@
+body{
+    background-image: url(arriere-plan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img{
+    border-radius: 10%;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+header a{
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none;
+}
+header .a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 300%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5%;
+    background-color: rgb(0, 0, 82);
+    font-family: fantasy;
+    border-radius: 5%;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5%;
+    border-radius: 10%;
+    background-color: darkblue;
+    margin-left: 1%;
+
+}
+
+.ich{
+    display: flex;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 82);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 2%;
+}
+.ich div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+}
+
+.dos{
+    display: flex;
+    flex-direction: row-reverse;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 82);
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 2%;
+}
+.dos img{
+    padding: 0.5%;
+}
+.dos div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1%;
+}
+.dos h3{
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 0.5%;
+    margin-left: 10%;
+}
+footer img{
+    opacity: 70%;
+    width:40% ;
+    height:70%
+}
+
+@media screen and (max-width:1000px) {
+    .dos img{
+        width: 20%;
+    }
+}
+
+@media all and (max-device-width:650px) {
+    nav{
+        justify-content: center;
+    }
+    nav a{
+        font-size: 125%;
+        padding: 2%;
+    }
+
+    .ich{
+        flex-direction: column-reverse;
+    }
+    .ich iframe{
+        margin-bottom: 5%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .dos{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .dos img{
+        margin-right: 5%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+    footer a{
+        width: 50%;
+    }
+}
